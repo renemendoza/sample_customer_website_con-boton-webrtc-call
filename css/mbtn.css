@@ -1,0 +1,294 @@
+.close,
+.morphing-button .mbtn {
+    cursor: pointer
+}
+.style2:hover{
+    background-color: none;
+    box-shadow: #666 0 1px 2px;
+	background-image:url(../img/call2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.style2.opened {
+    background-color: #fff;
+}
+.style2 {
+    background-color: none;
+    color: #fff;
+	background-image:url(../img/call1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.top {
+    top: 20px
+}
+.right {
+    right: 20px
+}
+.bottom {
+    bottom: 20px
+}
+.left {
+    left: 20px
+}
+.mbtn-lg {
+    width: 80px;
+    height: 80px
+}
+.mbtn-md {
+    width: 60px;
+    height: 60px
+}
+.mbtn-sm {
+    width: 40px;
+    height: 40px
+}
+.mbtn-text {
+    width: 150px;
+    height: 50px
+}
+.mbtn-text .mbtn span {
+    display: block;
+    text-align: center;
+    vertical-align: middle
+}
+.h100.opened {
+    height: 100px
+}
+.h150.opened {
+    height: 150px
+}
+.h200.opened {
+    height: 350px
+}
+.h250.opened {
+    height: 250px
+}
+.h300.opened {
+    height: 300px
+}
+.h350.opened {
+    height: 350px
+}
+.h400.opened {
+    height: 400px
+}
+.h450.opened {
+    height: 450px
+}
+.h500.opened {
+    height: 500px
+}
+.h550.opened {
+    height: 550px
+}
+.w100.opened {
+    width: 100px
+}
+.w150.opened {
+    width: 150px
+}
+.w200.opened {
+    width: 200px
+}
+.w250.opened {
+    width: 250px
+}
+.w300.opened {
+    width: 300px
+}
+.w350.opened {
+    width: 350px
+}
+.w400.opened {
+    width: 300px
+}
+.w450.opened {
+    width: 450px
+}
+.w500.opened {
+    width: 300px
+}
+.w550.opened {
+    width: 550px
+}
+.circle {
+    border-radius: 50%
+}
+.square {
+    border-radius: 0
+}
+.morphing-button {
+    position: absolute;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+.morphing-button .mbtn .ico {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+.morphing-button span {
+    width: 100%;
+    height: 100%
+}
+.morphing-button .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-transform: translate(40px, 0);
+    -ms-transform: translate(40px, 0);
+    transform: translate(40px, 0);
+    visibility: hidden;
+    opacity: 0
+}
+.morphing-button .content.fade-up {
+    -webkit-transform: translate(0, 40px);
+    -ms-transform: translate(0, 40px);
+    transform: translate(0, 40px)
+}
+.morphing-button .content.fade-down {
+    -webkit-transform: translate(0, -40px);
+    -ms-transform: translate(0, -40px);
+    transform: translate(0, -40px)
+}
+.morphing-button .content.fade-left {
+    -webkit-transform: translate(40px, 0);
+    -ms-transform: translate(40px, 0);
+    transform: translate(40px, 0)
+}
+.morphing-button .content.fade-right {
+    -webkit-transform: translate(-40px, 0);
+    -ms-transform: translate(-40px, 0);
+    transform: translate(-40px, 0)
+}
+.morphing-button .content.scale-up {
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3)
+}
+.morphing-button .content.scale-down {
+    -webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    transform: scale(1.7)
+}
+.morphing-button .content.rotate-right {
+    -webkit-transform: rotate(-179deg) scale(.5);
+    -ms-transform: rotate(-179deg) scale(.5);
+    transform: rotate(-179deg) scale(.5)
+}
+.morphing-button .content.rotate-left {
+    -webkit-transform: rotate(179deg) scale(.5);
+    -ms-transform: rotate(179deg) scale(.5);
+    transform: rotate(179deg) scale(.5)
+}
+.morphing-button.closed {
+    -webkit-transition: all .1s ease-in-out .1s;
+    transition: all .1s ease-in-out .1s
+}
+.morphing-button.closed span {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all .2s ease-in-out .2s;
+    transition: all .2s ease-in-out .2s
+}
+.morphing-button.closed .content {
+    -webkit-transform: translate(40px, 0);
+    -ms-transform: translate(40px, 0);
+    transform: translate(40px, 0);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+.morphing-button.closed .content.fade-up {
+    -webkit-transform: translate(0, 40px);
+    -ms-transform: translate(0, 40px);
+    transform: translate(0, 40px)
+}
+.morphing-button.closed .content.fade-down {
+    -webkit-transform: translate(0, -40px);
+    -ms-transform: translate(0, -40px);
+    transform: translate(0, -40px)
+}
+.morphing-button.closed .content.fade-left {
+    -webkit-transform: translate(40px, 0);
+    -ms-transform: translate(40px, 0);
+    transform: translate(40px, 0)
+}
+.morphing-button.closed .content.fade-right {
+    -webkit-transform: translate(-40px, 0);
+    -ms-transform: translate(-40px, 0);
+    transform: translate(-40px, 0)
+}
+.morphing-button.closed .content.scale-up {
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3)
+}
+.morphing-button.closed .content.scale-down {
+    -webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    transform: scale(1.7)
+}
+.morphing-button.closed .content.rotate-right {
+    -webkit-transform: rotate(-179deg) scale(.5);
+    -ms-transform: rotate(-179deg) scale(.5);
+    transform: rotate(-179deg) scale(.5)
+}
+.morphing-button.closed .content.rotate-left {
+    -webkit-transform: rotate(179deg) scale(.5);
+    -ms-transform: rotate(179deg) scale(.5);
+    transform: rotate(179deg) scale(.5)
+}
+.morphing-button.opened {
+    border-radius: 5px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+.morphing-button.opened span {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+.morphing-button.opened .content {
+    -webkit-transform: translate(0, 0) scale(1) rotate(0);
+    -ms-transform: translate(0, 0) scale(1) rotate(0);
+    transform: translate(0, 0) scale(1) rotate(0);
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all .1s ease-in-out .1s;
+    transition: all .1s ease-in-out .1s;
+	background-image:none;
+}
+.close {
+    background: url(../img/close.png);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 14px;
+    height: 14px
+}
+.close.white {
+    background: url(../img/close-white.png);
+	z-index:9
+}
+.fixed {
+    position: fixed
+}

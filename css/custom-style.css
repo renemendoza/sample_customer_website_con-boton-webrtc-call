@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-honF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
+}
+body {
+    background-color: #F4FBFF !important;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+	background-image:url(../img/bg3.jpg);
+	background-position:center top;
+	background-repeat:no-repeat}
+
+header h1,
+header h2 {
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center
+}
+header h1 {
+    font-size: 6vw;
+    margin: 150px 0 20px
+}
+header h2 {
+    font-size: 4vw;
+    margin: 0
+}
+header h4 {
+    font-size: 20px;
+    color: #05759D;
+    margin: 0px;
+    left: 30px;
+    position: relative;
+    top: 15px;
+}
+#second-mbtn p{
+    font-size: 14px;
+    color: #022042;
+    margin: 0px;
+    top: -26px;
+    position: relative;
+    left: 6px;
+}
+
+#second-mbtn.opened {
+    height: 340px;
+}
+#second-mbtn .ico {
+    background-image: url(../img/png/glyphicons-10-magic.png)
+}
+#second-mbtn h3 {
+    font-size: 24px;
+    margin: 0 0 15px
+}
+#second-mbtn .content input {
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    width: 100%;
+    background-color: #f6f6f6;
+    border: 1px solid #ebebeb
+}
+#second-mbtn .content button {
+    cursor: pointer;
+    padding: 10px 25px;
+    background-color: #022042;
+    color: #eee;
+    border: none;
+    width: 100%;
+	    margin-top: 8px;
+}
+#second-mbtn .content button:hover {
+    background-color: #20548e
+}
+
+
+
+
+
+
+.panel-widget {
+    height: 100%;
+}
+
+.widget-header {
+    padding: 15px 15px 50px 15px;
+    min-height: 240px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/bg2.jpg);
+	background-position:center;
+	background-size:contain;
+	}
+.widget-body {
+    padding: 10px 0px 0px;
+    position: relative;
+    background-color: #F0F0FF;
+}
+
+.widget-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 23%;
+    margin-left: -50px;
+    top: -50px;
+}
+}
+.img-md {
+    width: 64px;
+    height: 64px;
+}
+.widget-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.img-border-light {
+        border-color: #fff;
+    border-width: 4px;
+    border-style: solid;;
+}
+
+
+.ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79A70A;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #79A70A;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
